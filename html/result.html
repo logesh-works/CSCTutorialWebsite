@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC</title>
+    <style>
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+        code {
+            font-family: monospace;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example HTML Code Structure</h1>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Personal Portfolio&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Introduction Section --&gt;
+    &lt;header&gt;
+        &lt;h1&gt;John Doe&lt;/h1&gt;
+        &lt;p&gt;Hello! I am John Doe, a budding web developer with a passion for creating interactive and user-friendly websites.&lt;/p&gt;
+        &lt;img src="https://via.placeholder.com/150" alt="John Doe"&gt;
+    &lt;/header&gt;
+    &lt;!-- Navigation --&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#education"&gt;Education&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#skills"&gt;Skills&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#projects"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;!-- Education Section --&gt;
+    &lt;section id="education"&gt;
+        &lt;h2&gt;Education&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Bachelor of Science in Computer Science - XYZ University&lt;/li&gt;
+            &lt;li&gt;High School Diploma - ABC High School&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h2&gt;Education Summary&lt;/h2&gt;
+        &lt;table&gt;
+            
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Degree&lt;/th&gt;
+                    &lt;th&gt;Institution&lt;/th&gt;
+                    &lt;th&gt;Year&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Bachelor of Science in Computer Science&lt;/td&gt;
+                    &lt;td&gt;XYZ University&lt;/td&gt;
+                    &lt;td&gt;2023&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;High School Diploma&lt;/td&gt;
+                    &lt;td&gt;ABC High School&lt;/td&gt;
+                    &lt;td&gt;2019&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/section&gt;
+    &lt;!-- Skills Section --&gt;
+    &lt;section id="skills"&gt;
+        &lt;h2&gt;Skills&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;HTML&lt;/li&gt;
+            &lt;li&gt;CSS&lt;/li&gt;
+            &lt;li&gt;JavaScript&lt;/li&gt;
+            &lt;li&gt;Python&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;HTML&lt;/dt&gt;
+            &lt;dd&gt;Markup language for creating web pages.&lt;/dd&gt;
+            &lt;dt&gt;CSS&lt;/dt&gt;
+            &lt;dd&gt;Stylesheet language for designing web pages.&lt;/dd&gt;
+            &lt;dt&gt;JavaScript&lt;/dt&gt;
+            &lt;dd&gt;Scripting language for creating dynamic web content.&lt;/dd&gt;
+            &lt;dt&gt;Python&lt;/dt&gt;
+            &lt;dd&gt;High-level programming language for general-purpose programming.&lt;/dd&gt;
+        &lt;/dl&gt;
+    &lt;/section&gt;
+    &lt;!-- Projects Section --&gt;
+    &lt;section id="projects"&gt;
+        &lt;h2&gt;Projects&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Project 1: &lt;a href="#"&gt;A simple to-do list app&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;Project 2: &lt;a href="#"&gt;A personal blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;Project 3: &lt;a href="#"&gt;A portfolio website&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;!-- Contact Information --&gt;
+    &lt;section id="contact"&gt;
+        &lt;h2&gt;Contact Me&lt;/h2&gt;
+        &lt;form action="#" method="post"&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name" required&gt;
+            &lt;br&gt;
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required&gt;
+            &lt;br&gt;
+            &lt;label for="message"&gt;Message:&lt;/label&gt;
+            &lt;textarea id="message" name="message" required&gt;&lt;/textarea&gt;
+            &lt;br&gt;
+            &lt;button type="submit"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/section&gt;
+    &lt;!-- Footer --&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 John Doe&lt;/p&gt;
+    &lt;/footer&gt;
+</body>
+</html>

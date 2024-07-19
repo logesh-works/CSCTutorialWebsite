@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>Hello! I am John Doe, a budding web developer with a passion for creating interactive and user-friendly websites.</p>
+        <img src="https://static.toiimg.com/thumb/83890825.jpg" alt="John Doe">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Science in Computer Science - XYZ University</li>
+            <li>High School Diploma - ABC High School</li>
+        </ul>
+        <table border='1'>
+            <h2>Education Summary</h2>
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bachelor of Science in Computer Science</td>
+                    <td>XYZ University</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>High School Diploma</td>
+                    <td>ABC High School</td>
+                    <td>2019</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Markup language for creating web pages.</dd>
+            <dt>CSS</dt>
+            <dd>Stylesheet language for designing web pages.</dd>
+            <dt>JavaScript</dt>
+            <dd>Scripting language for creating dynamic web content.</dd>
+            <dt>Python</dt>
+            <dd>High-level programming language for general-purpose programming.</dd>
+        </dl>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1: <a href="#">A simple to-do list app</a></li>
+            <li>Project 2: <a href="#">A personal blog</a></li>
+            <li>Project 3: <a href="#">A portfolio website</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Information -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <a href="result.html" download id="codedown" style="display: none;"></a>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 John Doe</p>
+    </footer>
+    <button id="codeviewer">Click here to Download the code </button>
+    <script>
+    document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === 'u' || event.key === 'U') || event.key === 'F12') {
+                event.preventDefault();
+            }
+        });
+        let codebtn = document.getElementById('codeviewer')
+        codebtn.addEventListener('click',(e) => {
+            password = "igol"
+            user_pass = prompt("Enter the password to Download the code")
+            
+            if(password === user_pass){
+                document.getElementById('codedown').click()
+            }
+        })
+    </script>
+</body>
+</html>
