@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.gallery-item {
+    margin: 0.5rem;
+    flex: 1 1 calc(25% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.gallery-item img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+    </header>
+    <main class="gallery">
+        <div class="gallery-item"><img src="https://www.quackit.com/pix/samples/23m.jpg" alt="Image 1"></div>
+        <div class="gallery-item"><img src="https://www.quackit.com/pix/samples/24m.jpg" alt="Image 2"></div>
+        <div class="gallery-item"><img src="https://www.quackit.com/pix/samples/33m.jpg" alt="Image 3"></div>
+        <div class="gallery-item"><img src="https://www.quackit.com/pix/samples/33m.jpg" alt="Image 4"></div>
+        <div class="gallery-item"><img src="https://www.quackit.com/pix/samples/33m.jpg" alt="Image 5"></div>
+        <div class="gallery-item"><img src="https://www.quackit.com/pix/samples/33m.jpg" alt="Image 6"></div>
+        <div class="gallery-item"><img src="https://www.quackit.com/pix/samples/33m.jpg" alt="Image 7"></div>
+        <div class="gallery-item"><img src="https://www.quackit.com/pix/samples/33m.jpg" alt="Image 8"></div>
+    </main>
+    <footer>
+        <p>Placeholder footer text</p>
+    </footer>
+    <script>
+         document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && (event.key === 'u' || event.key === 'U') || event.key === 'F12') {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
