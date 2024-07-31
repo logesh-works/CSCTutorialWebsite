@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Shop</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            height: 100vh;
+        }
+
+        .header {
+            background-color: #6b4226;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .nav {
+            background-color: #d3a760;
+            padding: 1rem;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 2fr minmax(150px,1fr);
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .featured-teas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem
+        }
+
+        .tea img {
+            width: 100%;
+        }
+
+        .about-shop {
+            background-color: #f4f4f4;
+            padding: 1rem;
+        }
+
+        .footer {
+            background-color: #6b4226;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Tea Shop</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <section class="featured-teas">
+                
+                <div class="tea">
+                    <img src="https://png.pngtree.com/png-clipart/20220429/original/pngtree-advertising-poster-with-realistic-green-tea-cup-png-image_7566862.png" alt="Tea 2">
+                    <p>Black Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="https://png.pngtree.com/png-clipart/20220429/original/pngtree-advertising-poster-with-realistic-green-tea-cup-png-image_7566862.png" alt="Tea 3">
+                    <p>Herbal Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="https://png.pngtree.com/png-clipart/20220429/original/pngtree-advertising-poster-with-realistic-green-tea-cup-png-image_7566862.png" alt="Tea 1">
+                    <p>Green Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="https://png.pngtree.com/png-clipart/20220429/original/pngtree-advertising-poster-with-realistic-green-tea-cup-png-image_7566862.png" alt="Tea 2">
+                    <p>Black Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="https://png.pngtree.com/png-clipart/20220429/original/pngtree-advertising-poster-with-realistic-green-tea-cup-png-image_7566862.png" alt="Tea 3">
+                    <p>Herbal Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="https://png.pngtree.com/png-clipart/20220429/original/pngtree-advertising-poster-with-realistic-green-tea-cup-png-image_7566862.png" alt="Tea 1">
+                    <p>Green Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="https://png.pngtree.com/png-clipart/20220429/original/pngtree-advertising-poster-with-realistic-green-tea-cup-png-image_7566862.png" alt="Tea 2">
+                    <p>Black Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="https://png.pngtree.com/png-clipart/20220429/original/pngtree-advertising-poster-with-realistic-green-tea-cup-png-image_7566862.png" alt="Tea 3">
+                    <p>Herbal Tea</p>
+                </div>
+            </section>
+            <section class="about-shop">
+                <h2>About Our Shop</h2>
+                <p>Welcome to our tea shop where we offer a variety of the finest teas...</p>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Contact us at: info@teashop.com</p>
+            <p>Follow us on social media</p>
+        </footer>
+
+    </div>
+    <script>
+        document.addEventListener('contextmenu', function(event) {
+           event.preventDefault();
+       });
+       document.addEventListener('keydown', function(event) {
+           if (event.ctrlKey && (event.key === 'u' || event.key === 'U') || event.key === 'F12') {
+               event.preventDefault();
+           }
+       });
+   </script>
+</body>
+</html>
